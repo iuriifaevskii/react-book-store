@@ -1,3 +1,8 @@
 export function selectBook(book){
-    console.log('A book has been selected: ' , book.title);
+    // selectBook є в ActionCreator, йому треба повернути action
+    //обєкт з type property
+    return {
+        type: 'BOOK_SELECTED',
+        payload : book
+    };
 }
